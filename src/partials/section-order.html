@@ -1,68 +1,72 @@
 <section class="your-order-section">
-    <h2 class="title-in-your-order visually-hidden">Your order</h2>
+  <h2 class="title-in-your-order visually-hidden">Your order</h2>
   <div class="green-picture-container"></div>
-    <div class="container your-order-container"> 
-    
+  <div class="container your-order-container">
     <div class="section-your-order-wrapper">
       <picture>
         <source
           srcset="
-            /img/desktop-pic-for-form.jpg    1x,
-            /img/desktop-pic-for-form@2x.jpg 2x
+          /img/your-order/desktop-pic-for-form.jpg 1x,
+          /img/your-order/desktop-pic-for-form@2x.jpg 2x
           "
           media="(min-width: 1200px)"
         />
         <source
           srcset="
-            /img/tablet-pic-for-form.jpg    1x,
-            /img/tablet-pic-for-form@2x.jpg 2x
+          /img/your-order/tablet-pic-for-form.jpg    1x,
+          /img/your-order/desktop-pic-for-form@2x.jpg 2x
           "
           media="(min-width: 768px)"
         />
         <img
           class="img-for-form-in-your-order"
-          src="/img/desktop-pic-for-form.jpg"
+          src="/img/your-order/desktop-pic-for-form.jpg"
           alt="Виріб компанії"
         />
       </picture>
-      <img class='ornament-for-your-order' src="/img/element-desktop.png" alt="ornament">
+      <img
+        class="ornament-for-your-order"
+        src="/img/your-order/desktop-ornament.png"
+        alt="ornament"
+      />
       <form class="form-in-your-order" name="form-in-your-order">
         <p class="your-order-section-title">
-          <span class="yellow-in-your-order"> Your order </span>is our priority: Personalized approach and quality of service
-        </p>  
+          <span class="yellow-in-your-order"> Your order </span>is our priority:
+          Personalized approach and quality of service
+        </p>
         <input
-            class="full-name-input"
-            id="full-name"
-            type="text"
-            name="full-name"
-            placeholder="Enter your full name"
-            pattern="[A-Za-zА-Яа-яЄєЇїІі']+"
-            required
-          />
-          <input
-            class="email-input"
-            type="email"
-            id="order-email"
-            name="order-email"
-            placeholder="Enter your email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-          />
-          <textarea
-           type="textarea"
-            class="textarea-in-your-order"
-            id="comments"
-            placeholder="Comments"
-          ></textarea>
-          <button type="submit" class="button-in-your-order">
-            Send
-            <svg class="arrow-in-button-icon" width="26" height="10">
-              <use
-                href="./img/order-section-icons.svg#icon-order-button-icon-in-order-sec">
-              </use>
-            </svg>
-          </button>
+          class="full-name-input"
+          id="full-name"
+          type="text"
+          name="full-name"
+          placeholder="Enter your full name"
+          pattern="[A-Za-zА-Яа-яЄєЇїІі']+"
+          required
+        />
+        <input
+          class="email-input"
+          type="email"
+          id="order-email"
+          name="order-email"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <textarea
+          type="textarea"
+          class="textarea-in-your-order"
+          id="comments"
+          placeholder="Comments"
+        ></textarea>
+        <button type="submit" class="button-in-your-order">
+          Send
+          <svg class="arrow-in-button-icon" width="26" height="10">
+            <use
+              href="/img/icons.svg#icon-arrow"
+            ></use>
+          </svg>
+        </button>
       </form>
     </div>
-</div>
+  </div>
 </section>
