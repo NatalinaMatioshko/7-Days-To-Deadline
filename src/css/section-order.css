@@ -24,9 +24,6 @@
   --white: #fcf9f9;
 }
 
-.your-order-section {
-  background-color: #051117;
-}
 
 .green-picture-container {
   width: 375px;
@@ -184,7 +181,6 @@ textarea[type='textarea']::placeholder {
     height: 776px;
     display: block;
     background-image: url(/img/your-order/tablet-green.jpg);
-    margin-bottom: 100px;
   }
 
   @media (min-resolution: 192dpi) and (min-width: 768px) {
@@ -199,6 +195,28 @@ textarea[type='textarea']::placeholder {
   .form-in-your-order {
     align-items: flex-start;
   }
+
+.ornament{
+  position: absolute;
+      width: 323px;
+      height: 484px;
+      background-image: url('../img/your-order/element-tablet.png'); 
+      background-size: cover;
+      bottom: -160px;
+      left: -32px; 
+}
+
+.img-for-form-in-your-order {
+  padding-top: 80px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  position: relative;
+  z-index: 123;
+  width: 704px;
+  height: 521px;
+  display:block;
+}
+
 
   .your-order-section-title {
     text-align: left;
@@ -230,20 +248,8 @@ textarea[type='textarea']::placeholder {
     height: 50px;
   }
 
-  .ornament-for-your-order {
-    position: absolute;
-    left: 0;
-    width: 323px;
-    height: 484px;
-    bottom: -100px;
-  }
 
-  .img-for-form-in-your-order {
-    display: block;
-    padding-top: 100px;
-    border-radius: 4px;
-    z-index: 123;
-  }
+  
 }
 
 @media screen and (min-width: 1280px) {
@@ -278,9 +284,11 @@ textarea[type='textarea']::placeholder {
   }
 
 
-  .ornament-for-your-order {
-    left: 0;
+  .ornament{
     width: 289px;
-    bottom: 6px;
+    height: 484px;
+    background-image: url('../img/your-order/element-desktop.png');
+    left:-50px;
+    bottom: -123px;
   }
 }
