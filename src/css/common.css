@@ -5,14 +5,25 @@
 }
 body {
   color: #fcf9f9;
-  background-color: rgba(255, 255, 255, 0.87);
-  background: #1c2225;
+  background-color: #1c2225;
   font-family: 'Manrope', sans-serif;
 }
 html {
   scroll-behavior: smooth;
 }
-
+section {
+  padding-bottom: 80px;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  section {
+    padding-bottom: 150px;
+  }
+}
 .container {
   min-width: 320px;
   max-width: 375px;
