@@ -1,7 +1,4 @@
 
-.section-testimonials {
-  padding-bottom: 80px;
-}
 .testimonials-title {
   font-weight: 500;
   font-size: 32px;
@@ -54,9 +51,6 @@
         padding: 54px 18px 18px 18px;
         min-height: 286px;
       }
-  .section-testimonials {
-    padding-bottom: 100px;
-  }
   .testimonials-list {
     display: flex;
     column-gap: 32px;
@@ -83,9 +77,6 @@
     .testimonials-container-discription {
         min-width: 340px;
     }
-    .section-testimonials {
-        padding-bottom: 150px;
-      }
       .testimonials-item3{
         display: flex;
       }
