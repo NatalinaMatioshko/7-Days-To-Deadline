@@ -62,9 +62,6 @@
 .yellow-in-your-order {
   color: var(--yellow);
 }
-.section-your-order-wrapper {
-  padding-top: 40px;
-}
 
 .section-your-order-wrapper {
   display: flex;
@@ -239,13 +236,14 @@ textarea[type='textarea']::placeholder {
     left: 0;
     width: 323px;
     height: 484px;
-    bottom: -116px;
+    bottom: -100px;
   }
 
   .img-for-form-in-your-order {
     display: block;
     padding-top: 100px;
     border-radius: 4px;
+    z-index: 123;
   }
   .your-order-section {
     padding-bottom: 100px;
@@ -283,11 +281,6 @@ textarea[type='textarea']::placeholder {
     margin-top: 20px;
   }
 
-  /* .img-for-form-in-your-order {
-    border-radius: 4px;
-    background-image: url(/img/your-order/desktop-ornament.png);
-    background-repeat: repeat;
-  } */
 
   .ornament-for-your-order {
     left: 0;
