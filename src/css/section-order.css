@@ -26,7 +26,6 @@
 
 .your-order-section {
   background-color: #051117;
-  padding-bottom: 80px;
 }
 
 .green-picture-container {
@@ -244,9 +243,6 @@ textarea[type='textarea']::placeholder {
     padding-top: 100px;
     border-radius: 4px;
     z-index: 123;
-  }
-  .your-order-section {
-    padding-bottom: 100px;
   }
 }
 
