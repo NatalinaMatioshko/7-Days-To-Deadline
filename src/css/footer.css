@@ -1,16 +1,23 @@
 .footer {
-  margin: 0 auto;
+  margin: auto;
   padding-top: 40px;
-  padding-bottom: 280px;
+  height: 637px;
+
+  background-image: url(../img/ornament/ornament-yellow.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 452px 401px;
+  background-position-y: 437px;
+  background-position-x: -38px;
 }
 
-.footer-navigation {
-  display: inline-block;
+.footer-container {
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-menu {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   gap: 25px;
   margin-bottom: 40px;
@@ -27,7 +34,6 @@
   line-height: 129%;
   text-transform: uppercase;
   color: #fcf9f9;
-  position: relative;
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -50,10 +56,17 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    height: 370px;
+    position: relative;
+    background-position-x: 594px;
+    background-position-y: -14px;
+  }
+
   .footer-menu {
     margin-bottom: 80px;
     flex-wrap: nowrap;
-    max-width: 768px;
   }
 
   .footer-list {
@@ -68,6 +81,14 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .footer {
+    max-width: 1280px;
+    height: 363px;
+    background-size: 595px 528px;
+    background-position-x: 944px;
+    background-position-y: -61px;
+  }
+
   .footer-menu {
     margin-bottom: 117px;
   }
@@ -80,4 +101,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+  }
 }
