@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/7-Days-To-Deadline/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/7-Days-To-Deadline/assets/index-c460bdd3.css">
+    <link rel="stylesheet" href="/7-Days-To-Deadline/assets/index-1258bd6e.css">
   </head>
 
   <body>
@@ -144,7 +144,73 @@
         </ul>
     </div>
 </section>
-      
+      <section class="section your-order-section">
+  <h2 id="your-order" class="visually-hidden">Your order</h2>
+  <div class="green-picture-container">
+    <p class="visually-hidden">Вишиванка</p>
+  </div>
+  <div class="container your-order-container">
+    <div class="section-your-order-wrapper">
+      <picture class="img-for-form-in-your-order">
+        <source
+          srcset="
+            ../img/your-order/desktop1440-pic-for-form-min.jpg    1x,
+            ../img/your-order/desktop1440-pic-for-form@2x-min.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="/7-Days-To-Deadline/assets/desktop-pic-for-form-861393ae.jpg 1x, /7-Days-To-Deadline/assets/desktop-pic-for-form@2x-4a8dfa8a.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/7-Days-To-Deadline/assets/tablet-pic-for-form-b3c55bfb.jpg 1x, /7-Days-To-Deadline/assets/tablet-pic-for-form@2x-516b8ca9.jpg 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="/7-Days-To-Deadline/assets/desktop-pic-for-form-861393ae.jpg"
+          alt="Виріб компанії"
+        />
+      </picture>
+      <form class="form-in-your-order" name="form-in-your-order">
+        <p class="your-order-section-title">
+          <span class="yellow-in-your-order"> Your order </span>is our priority:
+          Personalized approach and quality of service
+        </p>
+        <input
+          class="full-name-input"
+          id="full-name"
+          type="text"
+          name="full-name"
+          placeholder="Enter your full name"
+          pattern="[A-Za-zА-Яа-яЄєЇїІі']+"
+          required
+        />
+        <input
+          class="email-input"
+          type="email"
+          id="order-email"
+          name="order-email"
+          placeholder="Enter your email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <textarea
+          class="textarea-in-your-order"
+          id="comments"
+          placeholder="Comments"
+        ></textarea>
+        <button type="submit" class="button-in-your-order">
+          Send
+          <svg class="arrow-in-button-icon" width="26" height="10">
+            <use href="/7-Days-To-Deadline/assets/icons-e4b717e6.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
       <section class="section-testimonials">
 <div class="container">
   <h2 class="testimonials-title">Testimonials</h2>
