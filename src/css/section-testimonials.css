@@ -67,7 +67,7 @@
     font-size: 16px;
   }
   .testimonials-container-discription{
-    min-width: 300px;
+    max-width: 300px;
   }
   .testimonials-item2{
     display: flex;
@@ -75,7 +75,7 @@
 }
 @media screen and (min-width: 1280px) {
     .testimonials-container-discription {
-        min-width: 340px;
+       max-width: 340px;
     }
       .testimonials-item3{
         display: flex;
@@ -91,4 +91,7 @@
   .testimonials-container {
     min-height: 264px;
   }
+  .testimonials-container-discription {
+    max-width: 360px;
+}
 }
