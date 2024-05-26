@@ -1,8 +1,9 @@
 .hero {
-}
-.container {
     padding-top: 84px;
     padding-bottom: 80px;
+}
+.container {
+
 }
 .hero-title {
     font-weight: 400;
@@ -10,6 +11,7 @@ font-size: 44px;
 line-height: 1.09;
 letter-spacing: -0.03em;
 color: #fcf9f9;
+margin-bottom: 20px;
 }
 .hero-accent {
     color: #ecd979;
@@ -25,6 +27,11 @@ text-transform: uppercase;
 color: #fcf9f9;
 width: 154px;
 height: 49px;
+margin-left: 90px;
+
 }
 .hero-image {
+    margin: 0auto;
+    border-radius: 4px;
+
 }
