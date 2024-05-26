@@ -87,3 +87,8 @@
         width: calc((100% - 52px) / 3);
       }
 }
+@media screen and (min-width: 1440px) {
+  .testimonials-container {
+    min-height: 264px;
+  }
+}
