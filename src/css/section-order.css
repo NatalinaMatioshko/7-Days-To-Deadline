@@ -97,7 +97,7 @@ input[type='email']::placeholder {
   color: rgba(252, 249, 249, 0.5);
 }
 
-textarea[type='textarea']::placeholder {
+textarea::placeholder {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -195,28 +195,27 @@ textarea[type='textarea']::placeholder {
     align-items: flex-start;
   }
 
-.img-for-form-in-your-order::before{
-  content: "";
-  position: absolute;
-      width: 323px;
-      height: 484px;
-      background-image: url('../img/your-order/element-tablet.png'); 
-      background-size: cover;
-      bottom: -160px;
-      left: -32px; 
-      z-index: -1;
-}
+  .img-for-form-in-your-order::before {
+    content: '';
+    position: absolute;
+    width: 323px;
+    height: 484px;
+    background-image: url('../img/your-order/element-tablet.png');
+    background-size: cover;
+    bottom: -160px;
+    left: -32px;
+    z-index: -1;
+  }
 
-.img-for-form-in-your-order {
-  padding-top: 80px;
-  margin-bottom: 100px;
-  border-radius: 4px;
-  position: relative;
-  width: 704px;
-  height: 521px;
-  display:block;
-}
-
+  .img-for-form-in-your-order {
+    padding-top: 80px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    position: relative;
+    width: 704px;
+    height: 521px;
+    display: block;
+  }
 
   .your-order-section-title {
     text-align: left;
@@ -247,9 +246,6 @@ textarea[type='textarea']::placeholder {
     width: 168px;
     height: 50px;
   }
-
-
-  
 }
 
 @media screen and (min-width: 1280px) {
@@ -283,37 +279,36 @@ textarea[type='textarea']::placeholder {
     margin-top: 20px;
   }
 
-
-  .img-for-form-in-your-order::before{
-    content: "";
+  .img-for-form-in-your-order::before {
+    content: '';
     width: 289px;
     height: 484px;
     background-image: url('../img/your-order/element-desktop.png');
-    left:-50px;
+    left: -50px;
     bottom: -123px;
     z-index: -1;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .green-picture-container {
+    margin-bottom: 150px;
+    width: 1440px;
+    background-image: url(../img/your-order/desktop-1440-green-order-min.jpg);
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 1440px) {
     .green-picture-container {
-        margin-bottom: 150px;
-      width: 1440px;
-      background-image: url(../img/your-order/desktop-1440-green-order-min.jpg);
+      background-image: url(../img/your-order/desktop-1440-green-order@2x-min.jpg);
     }
-  
-    @media (min-resolution: 192dpi) and (min-width: 1440px) {
-      .green-picture-container {
-        background-image: url(../img/your-order/desktop-1440-green-order@2x-min.jpg);
-      }
-    }
-    .img-for-form-in-your-order::before{
-        background-image: url('../img/your-order/desktop1440-your-order-ornament.png');
-        width: 325px;
-        left: -100px;
-        bottom: -120px;
-    }
-    .your-order-section-title{
-        width:666px;
-    }
+  }
+  .img-for-form-in-your-order::before {
+    background-image: url('../img/your-order/desktop1440-your-order-ornament.png');
+    width: 325px;
+    left: -100px;
+    bottom: -120px;
+  }
+  .your-order-section-title {
+    width: 666px;
+  }
 }
