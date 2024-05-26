@@ -56,11 +56,11 @@
   opacity: 0.8;
 }
 .mobile-open-btn {
-  background: transparen;
+  background: transparent;
   border: none;
 }
 .mobile-open-btn-icon {
-  fill: #ecd979;
+  stroke: #ecd979;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,13 +74,15 @@
   .header-social-list {
     margin-right: 20px;
   }
-
-  .mobile-open-btn {
+  .mobile-open-btn-icon {
     width: 44px;
     height: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
+  .header-logo-images {
+    margin-right: 60px;
+  }
   .header-nav {
     display: block;
     min-width: 478px;
@@ -99,6 +101,11 @@
     line-height: 1.29;
     white-space: nowrap;
     text-transform: uppercase;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-item-link:hover,
+  .header-item-link:focus {
+    color: #ecd979;
   }
   .header-contact-data {
     display: flex;
@@ -112,6 +119,11 @@
     min-width: 193px;
     height: 48px;
     margin-right: 20px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contact-data:hover,
+  .header-contact-data:focus {
+    border-color: #ecd979;
   }
 
   .header-social-list {
@@ -120,6 +132,11 @@
 
   .mobile-open-btn {
     display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header-nav-list {
+    margin-bottom: 289px;
   }
 }
 
@@ -133,19 +150,20 @@
   height: 100%;
   overflow-y: auto;
   opacity: 0;
-  visibility: hidden;
   color: #1c2225;
+  transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open{
-  opacity: 100% ;
-  visibility: inherit;
+.is-open {
+  transform: translateX(0);
+  opacity: 100%;
 }
 .mobile-menu-container {
   position: relative;
   max-width: 274px;
   height: 100%;
   margin-left: auto;
-  margin-right: auto;
   background: #ecd979;
   padding: 20px 20px 0;
   background-image: url(/img/ornament/ornament-grey.png);
@@ -186,6 +204,7 @@
   border: none;
 }
 .btn-close-icon {
+  stroke-width: 3px;
   stroke: #1c2225;
 }
 .mobile-menu-nav {
@@ -203,15 +222,14 @@
   flex-direction: column;
   gap: 20px;
 }
-.mobile-menu-ornament{
+.mobile-menu-ornament {
   position: absolute;
   width: 340px;
-    height: 302px;
+  height: 302px;
   background-image: url(/img/ornament/ornament-grey.png);
   background-size: contain;
   left: -27px;
   bottom: -51px;
-  
 }
 
 @media screen and (min-width: 768px) {
