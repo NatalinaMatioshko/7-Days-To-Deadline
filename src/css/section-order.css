@@ -1,0 +1,320 @@
+:root {
+  --font-family: 'Manrope', sans-serif;
+  --second-family: 'DM Sans', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --black: #1c2225;
+  --yellow: #ecd979;
+  --white: #fcf9f9;
+  --yellow: #ecd979;
+  --white: #fcf9f9;
+}
+
+.green-picture-container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;;
+  height: 500px;
+  background-image: url(/img/your-order/mobile-green.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+  .green-picture-container {
+    background-image: url(/img/your-order/mobile-green@2x.jpg);
+  }
+}
+
+.img-for-form-in-your-order {
+  display: none;
+}
+
+.your-order-section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 137%;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+
+.yellow-in-your-order {
+  color: var(--yellow);
+}
+
+.section-your-order-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  flex-direction: column-reverse;
+}
+
+.form-in-your-order {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.full-name-input {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 335px;
+  height: 47px;
+  overflow-y: hidden;
+  background-color: inherit;
+  color: var(--white);
+}
+
+input[type='text']::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+input[type='email']::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+.email-input {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 335px;
+  height: 47px;
+  overflow-y: hidden;
+  background-color: inherit;
+  color: var(--white);
+}
+
+.textarea-in-your-order {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 8px;
+  padding: 14px 16px;
+  width: 335px;
+  height: 196px;
+  overflow-y: hidden;
+  background-color: inherit;
+  color: var(--white);
+  resize: none;
+}
+
+.button-in-your-order {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  width: 154px;
+  height: 49px;
+  background-color: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.button-in-your-order:hover {
+  border: 1px solid var(--yellow);
+}
+
+.arrow-in-button-icon {
+  fill: yellow;
+  padding-left: 10px;
+}
+
+.full-name-input:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+  outline: none;
+  transition: 225ms ease-in-out;
+}
+
+.email-input:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+  outline: none;
+  transition: 225ms ease-in-out;
+}
+
+.textarea-in-your-order:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+  outline: none;
+  transition: 225ms ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+  .ornament-for-your-order {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .green-picture-container {
+    max-width: 768px;
+    height: 776px;
+    display: block;
+    background-image: url(/img/your-order/tablet-green.jpg);
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 768px) {
+    .green-picture-container {
+      background-image: url(/img/your-order/tablet-green@2x.jpg);
+    }
+  }
+
+  .your-order-container {
+    position: relative;
+  }
+  .form-in-your-order {
+    align-items: flex-start;
+  }
+
+  .img-for-form-in-your-order::before {
+    content: '';
+    position: absolute;
+    width: 323px;
+    height: 484px;
+    background-image: url('/img/your-order/element-tablet.png');
+    background-size: cover;
+    bottom: -160px;
+    left: -32px;
+    z-index: -1;
+  }
+
+  .img-for-form-in-your-order {
+    padding-top: 80px;
+    margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    position: relative;
+    width: 704px;
+    height: 521px;
+    display: block;
+  }
+
+  .your-order-section-title {
+    text-align: left;
+    font-size: 44px;
+    line-height: 132%;
+    width: 542px;
+    padding-bottom: 20px;
+  }
+
+  .email-input {
+    width: 508px;
+    height: 50px;
+  }
+
+  .full-name-input {
+    width: 508px;
+    height: 50px;
+  }
+
+  .textarea-in-your-order {
+    width: 508px;
+    height: 196px;
+  }
+
+  .button-in-your-order {
+    border-radius: 15px;
+    padding: 14px 39px;
+    width: 168px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .green-picture-container {
+    max-width: 1280px;
+    background-image: url(/img/your-order/desktop-green.jpg);
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 1280px) {
+    .green-picture-container {
+      background-image: url(/img/your-order/desktop-green@2x.jpg);
+    }
+  }
+
+  .your-order-section-title {
+    padding-bottom: 20px;
+  }
+
+  .section-your-order-wrapper {
+    flex-direction: row;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .img-for-form-in-your-order {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+  }
+
+  .button-in-your-order {
+    margin-top: 20px;
+  }
+
+  .img-for-form-in-your-order::before {
+    content: '';
+    width: 289px;
+    height: 484px;
+    background-image: url('/img/your-order/element-desktop.png');
+    left: -50px;
+    bottom: -123px;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .green-picture-container {
+    margin-bottom: 150px;
+    max-width: 1440px;
+    background-image: url(/img/your-order/desktop-1440-green-order-min.jpg);
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 1440px) {
+    .green-picture-container {
+      background-image: url(/img/your-order/desktop-1440-green-order@2x-min.jpg);
+    }
+  }
+  .img-for-form-in-your-order::before {
+    background-image: url('/img/your-order/desktop1440-your-order-ornament.png');
+    width: 325px;
+    left: -100px;
+    bottom: -120px;
+    margin-left: auto;
+    margin-right: auto;;
+  }
+  .your-order-section-title {
+    width: 666px;
+  }
+}

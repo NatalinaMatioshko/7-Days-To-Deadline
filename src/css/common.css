@@ -7,7 +7,6 @@ body {
   color: #fcf9f9;
   background-color: #1c2225;
   font-family: 'Manrope', sans-serif;
-  display: flex;
 }
 html {
   scroll-behavior: smooth;
@@ -25,6 +24,7 @@ section {
     padding-bottom: 150px;
   }
 }
+
 .container {
   min-width: 320px;
   max-width: 375px;

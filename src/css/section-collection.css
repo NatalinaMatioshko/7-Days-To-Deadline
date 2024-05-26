@@ -35,8 +35,7 @@
     border-radius: 4px;
 }
 .section-collection{
-    position: absolute;
-    background-image: url(../img/ornament/ornament-yellow.png);
+    background-image: url(/img/ornament/ornament-yellow.png);
     background-size: 199px 177px;
     background-repeat: no-repeat;
     background-position: -127px 300px;
@@ -63,11 +62,18 @@
 @media screen and (min-width: 1280px) {
 .collection-list {
     row-gap: 40px;
-        }
+    }
 .collection-scr {
     width: calc((100% - 40px) / 3);
     }
 .section-collection{
     background-position: -169px 201px;
-}    
+    }    
+}
+
+@media screen and (min-width: 1440px) {
+
+.section-collection{
+    background-position: -169px 211px;
+}
 }
