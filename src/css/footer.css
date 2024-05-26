@@ -1,0 +1,107 @@
+.footer {
+  margin: auto;
+  padding-top: 40px;
+  height: 637px;
+
+  background-image: url(../img/ornament/ornament-yellow.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 452px 401px;
+  background-position-y: 437px;
+  background-position-x: -38px;
+}
+
+.footer-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.footer-list {
+  width: calc((100% - 40px) / 2);
+}
+
+.footer-link {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #ecd979;
+}
+
+.footer-title {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 123%;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+}
+
+.footer-accent {
+  color: #ecd979;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    height: 370px;
+    position: relative;
+    background-position-x: 594px;
+    background-position-y: -14px;
+  }
+
+  .footer-menu {
+    margin-bottom: 80px;
+    flex-wrap: nowrap;
+  }
+
+  .footer-list {
+    width: auto;
+  }
+
+  .footer-title {
+    width: 521px;
+    font-size: 54px;
+    line-height: 119%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    max-width: 1280px;
+    height: 363px;
+    background-size: 595px 528px;
+    background-position-x: 944px;
+    background-position-y: -61px;
+  }
+
+  .footer-menu {
+    margin-bottom: 117px;
+  }
+
+  .footer-title {
+    width: 754px;
+    font-size: 64px;
+    line-height: 116%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    max-width: 1440px;
+  }
+}
