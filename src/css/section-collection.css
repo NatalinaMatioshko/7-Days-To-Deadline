@@ -29,7 +29,27 @@
     letter-spacing: 0.05em;
     color: rgba(252, 249, 249, 0.4);
 }
+.collection-scr{
+    z-index: 2222;
+}
 
+.collection-scr-box{
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.collection-ornament{
+    position: relative;
+    z-index: 1111;
+}
+.collection-ornament-scr{
+    position: absolute;
+    width: 199px;
+    height: 177px;
+    background-image: url(../img/ornament/ornament-yellow.png);
+    background-size: cover;
+    left: -147px;
+    top: 214px;
+}
 
 
 
@@ -43,13 +63,22 @@
  .collection-scr{
     width: calc((100% - 20px) / 2);
  }
+ .collection-ornament-scr{
+    width: 338px;
+    height: 300px; 
+    left: -256px;
+    top: 117px;
+ }
 }
 
 @media screen and (min-width: 1280px) {
 .collection-list {
-        row-gap: 40px;
+    row-gap: 40px;
         }
 .collection-scr {
-        width: calc((100% - 40px) / 3);
+    width: calc((100% - 40px) / 3);
     }
+.collection-ornament-scr{
+    left: -219px;
+}    
 }
