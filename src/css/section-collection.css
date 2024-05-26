@@ -29,26 +29,17 @@
     letter-spacing: 0.05em;
     color: rgba(252, 249, 249, 0.4);
 }
-.collection-scr{
-    z-index: 2222;
-}
 
 .collection-scr-box{
     box-sizing: border-box;
     border-radius: 4px;
 }
-.collection-ornament{
-    position: relative;
-    z-index: 1111;
-}
-.collection-ornament-scr{
+.section-collection{
     position: absolute;
-    width: 199px;
-    height: 177px;
     background-image: url(../img/ornament/ornament-yellow.png);
-    background-size: cover;
-    left: -147px;
-    top: 214px;
+    background-size: 199px 177px;
+    background-repeat: no-repeat;
+    background-position: -127px 300px;
 }
 
 
@@ -63,11 +54,9 @@
  .collection-scr{
     width: calc((100% - 20px) / 2);
  }
- .collection-ornament-scr{
-    width: 338px;
-    height: 300px; 
-    left: -256px;
-    top: 117px;
+ .section-collection{
+    background-size: 338px 300px;
+    background-position: -224px 201px;
  }
 }
 
@@ -78,7 +67,7 @@
 .collection-scr {
     width: calc((100% - 40px) / 3);
     }
-.collection-ornament-scr{
-    left: -219px;
+.section-collection{
+    background-position: -169px 201px;
 }    
 }
