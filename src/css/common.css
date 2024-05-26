@@ -7,6 +7,7 @@ body {
   color: #fcf9f9;
   background-color: #1c2225;
   font-family: 'Manrope', sans-serif;
+  display: flex;
 }
 html {
   scroll-behavior: smooth;
@@ -28,24 +29,29 @@ section {
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 32px;
+
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
