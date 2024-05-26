@@ -25,9 +25,9 @@
 }
 
 .green-picture-container {
-  width: 375px;
-  margin-left: 0;
-  padding-left: 0;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;;
   height: 500px;
   background-image: url(/img/your-order/mobile-green.jpg);
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 768px) {
   .green-picture-container {
-    width: 768px;
+    max-width: 768px;
     height: 776px;
     display: block;
     background-image: url(/img/your-order/tablet-green.jpg);
@@ -200,7 +200,7 @@ textarea::placeholder {
     position: absolute;
     width: 323px;
     height: 484px;
-    background-image: url('../img/your-order/element-tablet.png');
+    background-image: url('/img/your-order/element-tablet.png');
     background-size: cover;
     bottom: -160px;
     left: -32px;
@@ -210,6 +210,8 @@ textarea::placeholder {
   .img-for-form-in-your-order {
     padding-top: 80px;
     margin-bottom: 100px;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 4px;
     position: relative;
     width: 704px;
@@ -250,7 +252,7 @@ textarea::placeholder {
 
 @media screen and (min-width: 1280px) {
   .green-picture-container {
-    width: 1280px;
+    max-width: 1280px;
     background-image: url(/img/your-order/desktop-green.jpg);
   }
 
@@ -272,6 +274,8 @@ textarea::placeholder {
   }
 
   .img-for-form-in-your-order {
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 0;
   }
 
@@ -283,7 +287,7 @@ textarea::placeholder {
     content: '';
     width: 289px;
     height: 484px;
-    background-image: url('../img/your-order/element-desktop.png');
+    background-image: url('/img/your-order/element-desktop.png');
     left: -50px;
     bottom: -123px;
     z-index: -1;
@@ -293,20 +297,22 @@ textarea::placeholder {
 @media screen and (min-width: 1440px) {
   .green-picture-container {
     margin-bottom: 150px;
-    width: 1440px;
-    background-image: url(../img/your-order/desktop-1440-green-order-min.jpg);
+    max-width: 1440px;
+    background-image: url(/img/your-order/desktop-1440-green-order-min.jpg);
   }
 
   @media (min-resolution: 192dpi) and (min-width: 1440px) {
     .green-picture-container {
-      background-image: url(../img/your-order/desktop-1440-green-order@2x-min.jpg);
+      background-image: url(/img/your-order/desktop-1440-green-order@2x-min.jpg);
     }
   }
   .img-for-form-in-your-order::before {
-    background-image: url('../img/your-order/desktop1440-your-order-ornament.png');
+    background-image: url('/img/your-order/desktop1440-your-order-ornament.png');
     width: 325px;
     left: -100px;
     bottom: -120px;
+    margin-left: auto;
+    margin-right: auto;;
   }
   .your-order-section-title {
     width: 666px;
