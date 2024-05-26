@@ -1,0 +1,79 @@
+.collection-head{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.37;
+    letter-spacing: -0.03em;
+    color: #FCF9F9;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.collection-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.collection-info-head{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+.collection-info-price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: rgba(252, 249, 249, 0.4);
+}
+
+.collection-scr-box{
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.section-collection{
+    background-image: url(/img/ornament/ornament-yellow.png);
+    background-size: 199px 177px;
+    background-repeat: no-repeat;
+    background-position: -127px 300px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+ .collection-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+ }
+ .collection-scr{
+    width: calc((100% - 20px) / 2);
+ }
+ .section-collection{
+    background-size: 338px 300px;
+    background-position: -224px 201px;
+ }
+}
+
+@media screen and (min-width: 1280px) {
+.collection-list {
+    row-gap: 40px;
+    }
+.collection-scr {
+    width: calc((100% - 40px) / 3);
+    }
+.section-collection{
+    background-position: -169px 201px;
+    }    
+}
+
+@media screen and (min-width: 1440px) {
+
+.section-collection{
+    background-position: -169px 211px;
+}
+}
