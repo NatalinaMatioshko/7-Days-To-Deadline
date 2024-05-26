@@ -196,7 +196,8 @@ textarea[type='textarea']::placeholder {
     align-items: flex-start;
   }
 
-.ornament{
+.img-for-form-in-your-order::before{
+  content: "";
   position: absolute;
       width: 323px;
       height: 484px;
@@ -204,6 +205,7 @@ textarea[type='textarea']::placeholder {
       background-size: cover;
       bottom: -160px;
       left: -32px; 
+      z-index: -1;
 }
 
 .img-for-form-in-your-order {
@@ -211,7 +213,6 @@ textarea[type='textarea']::placeholder {
   margin-bottom: 100px;
   border-radius: 4px;
   position: relative;
-  z-index: 123;
   width: 704px;
   height: 521px;
   display:block;
@@ -284,11 +285,13 @@ textarea[type='textarea']::placeholder {
   }
 
 
-  .ornament{
+  .img-for-form-in-your-order::before{
+    content: "";
     width: 289px;
     height: 484px;
     background-image: url('../img/your-order/element-desktop.png');
     left:-50px;
     bottom: -123px;
+    z-index: -1;
   }
 }
