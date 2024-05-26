@@ -2,12 +2,14 @@
   display: flex;
   justify-content: center;
 }
+.container {
+  width: 335px;
+}
 .about-section-content {
   display: flex;
   flex-direction: column;
-  width: 335px;
-  font-family: 'Manrope', sans-serif;
 }
+
 .about-nema {
   display: flex;
   align-items: flex-start;
@@ -27,8 +29,7 @@
   flex-direction: column;
   gap: 20px;
 }
-.about-menu-list {
-}
+
 .about-text {
   font-weight: 400;
   font-size: 14px;
@@ -36,11 +37,26 @@
   color: rgba(252, 249, 249, 0.4);
 }
 .about-picture {
+  position: relative;
   border-radius: 4px;
   width: 335px;
   height: 499px;
   margin-top: 50px;
 }
+.about-picture::before {
+  content: '';
+  position: absolute;
+  width: 495px;
+  height: 408px;
+  background-image: url(../img/ornament/ornament-yellow.png);
+  background-size: cover;
+  top: auto;
+  bottom: -50px;
+  left: 20px;
+  right: auto;
+  z-index: -1;
+}
+
 @media screen and (min-width: 768px) {
   .about-section-content {
     width: 704px;
@@ -59,11 +75,12 @@
     letter-spacing: -0.04em;
     color: rgba(252, 249, 249, 0.4);
   }
+  .about-picture {
+    width: 704px;
+    height: 545px;
+  }
 }
 @media screen and (min-width: 1280px) {
-  .about-section {
-    background-image: url();
-  }
   .about-section-content {
     flex-direction: row;
     width: 1180px;
@@ -92,6 +109,7 @@
   .about-picture {
     display: block;
     margin: 0;
-    width: 50%;
+    width: 594px;
+    height: 545px;
   }
 }
