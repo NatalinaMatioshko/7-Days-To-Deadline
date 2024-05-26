@@ -24,7 +24,6 @@
   --white: #fcf9f9;
 }
 
-
 .green-picture-container {
   width: 375px;
   margin-left: 0;
@@ -294,4 +293,8 @@ textarea[type='textarea']::placeholder {
     bottom: -123px;
     z-index: -1;
   }
+}
+
+@media screen and (min-width: 1400px){
+
 }
