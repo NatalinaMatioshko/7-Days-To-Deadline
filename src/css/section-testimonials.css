@@ -1,0 +1,97 @@
+
+.testimonials-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 137%;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  margin-bottom: 40px;
+}
+.testimonials-list-item {
+  position: relative;
+  padding: 24px 0px 0px 0px;
+  box-shadow: 0 2px 32px 4px rgba(18, 20, 23, 0.02);
+}
+.testimonials-img-review {
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 4px #1018280f;
+}
+.testimonials-item-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #fcf9f9;
+  margin-bottom: 8px;
+}
+.testimonials-item2,
+.testimonials-item3{
+    display: none;
+}
+
+.testimonials-item-discr {
+  font-size: 14px;
+  line-height: 137%;
+  text-align: center;
+  color: rgba(252, 249, 249, 0.4);
+  
+}
+.testimonials-container {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 4px;
+  padding: 54px 22px 18px 22px;
+}
+@media screen and (min-width: 768px) {
+    .testimonials-container {
+        border: 1px solid rgba(252, 249, 249, 0.1);
+        border-radius: 4px;
+        padding: 54px 18px 18px 18px;
+        min-height: 286px;
+      }
+  .testimonials-list {
+    display: flex;
+    column-gap: 32px;
+  }
+  .testimonials-list-item{
+    width: calc((100% - 32px) / 2);
+  }
+ 
+  .testimonials-title {
+    font-size: 44px;
+    line-height: 145%;
+  }
+  .testimonials-item-discr {
+    font-size: 16px;
+  }
+  .testimonials-container-discription{
+    max-width: 300px;
+  }
+  .testimonials-item2{
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) {
+    .testimonials-container-discription {
+       max-width: 340px;
+    }
+      .testimonials-item3{
+        display: flex;
+      }
+      .testimonials-list {
+        column-gap: 26px;
+      }
+      .testimonials-list-item{
+        width: calc((100% - 52px) / 3);
+      }
+}
+@media screen and (min-width: 1440px) {
+  .testimonials-container {
+    min-height: 264px;
+  }
+  .testimonials-container-discription {
+    max-width: 360px;
+}
+}
