@@ -295,6 +295,25 @@ textarea[type='textarea']::placeholder {
   }
 }
 
-@media screen and (min-width: 1400px){
-
+@media screen and (min-width: 1440px) {
+    .green-picture-container {
+        margin-bottom: 150px;
+      width: 1440px;
+      background-image: url(../img/your-order/desktop-1440-green-order-min.jpg);
+    }
+  
+    @media (min-resolution: 192dpi) and (min-width: 1440px) {
+      .green-picture-container {
+        background-image: url(../img/your-order/desktop-1440-green-order@2x-min.jpg);
+      }
+    }
+    .img-for-form-in-your-order::before{
+        background-image: url('../img/your-order/desktop1440-your-order-ornament.png');
+        width: 325px;
+        left: -100px;
+        bottom: -120px;
+    }
+    .your-order-section-title{
+        width:666px;
+    }
 }
