@@ -54,8 +54,8 @@
   height: 407px;
   background-image: url(/img/ornament/ornament-pale.png);
   background-size: cover;
-  bottom: -66px;
-  left: 46px;
+  bottom: -62px;
+  left: 50px;
   z-index: -1;
 }
 
@@ -81,14 +81,15 @@
   .about-picture::before {
     width: 454px;
     height: 484px;
-    bottom: -50px;
-    left: 50px;
+    bottom: -49px;
+    left: 366px;
   }
 }
 @media screen and (min-width: 1280px) {
   .about-section-content {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     max-width: 1180px;
   }
 
@@ -109,7 +110,7 @@
     color: rgba(252, 249, 249, 0.4);
   }
   .about-text-store {
-    width: 508px;
+    width: 536px;
   }
 
   .about-picture {
@@ -117,13 +118,40 @@
     height: 100%;
   }
   .about-picture::before {
-    bottom: -27px;
-    left: 147px;
+    bottom: -75px;
+    left: 261px;
+  }
+  .about-picture-img {
+    max-width: 594px;
+    border-radius: 4px;
   }
 }
 @media screen and (min-width: 1440px) {
+  .about-section {
+    max-width: 1440px;
+  }
+  .about-section-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-nema-menu {
+    width: 481px;
+    height: 389px;
+    margin-right: 50px;
+  }
   .about-picture {
-    width: 709px;
-    height: 545px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about-picture::before {
+    bottom: -75px;
+    left: 261px;
+  }
+  .about-text {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    color: rgba(252, 249, 249, 0.4);
   }
 }
