@@ -1,13 +1,13 @@
 .about-section {
   max-width: 375px;
   min-width: 320px;
-  margin: auto;
+  margin: 0 auto;
 }
-
 .about-section-content {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
+  position: relative;
 }
 .about-nema {
   display: flex;
@@ -30,34 +30,30 @@
   flex-direction: column;
   gap: 20px;
 }
-
 .about-text {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.04em;
   color: rgba(252, 249, 249, 0.4);
 }
-.about-picture {
+.about-picture-img {
   position: relative;
   width: 100%;
   height: 100%;
   margin-top: 50px;
 }
-.about-picture-img {
-  border-radius: 4px;
-}
-.about-picture::before {
-  content: '';
+.about-ornament {
+  display: block;
   position: absolute;
-  width: 458px;
+  width: 252px;
   height: 407px;
   background-image: url(/img/ornament/ornament-pale.png);
   background-size: cover;
-  bottom: -62px;
-  left: 50px;
+  bottom: -50px;
+  right: 0;
   z-index: -1;
+  background-repeat: no-repeat;
 }
-
 @media screen and (min-width: 768px) {
   .about-section {
     max-width: 768px;
@@ -76,27 +72,29 @@
     letter-spacing: -0.04em;
     color: rgba(252, 249, 249, 0.4);
   }
-
-  .about-picture::before {
-    width: 454px;
+  .about-ornament {
+    width: 380px;
     height: 484px;
     bottom: -49px;
-    left: 366px;
+    right: -8px;
   }
 }
 @media screen and (min-width: 1280px) {
+  .about-section {
+    max-width: 1280px;
+    padding-top: 120px;
+  }
   .about-section-content {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    max-width: 1180px;
+    align-content: center;
+    align-items: center;
+    gap: 50px;
   }
-
   .about-nema-menu {
     display: flex;
     flex-direction: column;
-    margin: 78.5px 50px 78.5px 0;
-    width: 536px;
+    width: 533px;
   }
   .about-menu {
     width: 536px;
@@ -111,59 +109,52 @@
   .about-text-store {
     width: 536px;
   }
-
+  .about-ornament {
+    width: 350px;
+    height: 442px;
+    bottom: -50px;
+    right: -5px;
+  }
   .about-picture {
-    width: 100%;
-    height: 100%;
-  }
-  .about-picture::before {
-    bottom: -75px;
-    left: 261px;
-  }
-  .about-picture-img {
-    max-width: 594px;
+    width: 594px;
+    height: 545px;
     border-radius: 4px;
   }
   .about-picture-img {
-    max-width: 594px;
-    border-radius: 4px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1440px) {
   .about-section {
     max-width: 1440px;
-  }
-  .about-section-content {
-    margin-left: auto;
-    margin-right: auto;
+    padding-top: 150px;
   }
   .about-nema-menu {
     width: 481px;
-    height: 389px;
-    justify-content: flex-end;
+    height: 430px;
+    margin-right: 0;
+  }
+  .about-text {
+    width: 481px;
   }
   .about-picture {
     width: 100%;
     height: 100%;
   }
   .about-picture-img {
-    max-width: 709px;
-    border-radius: 4px;
+    margin-top: 0;
+    width: 709px;
   }
-
-  .about-picture::before {
-    bottom: -84px;
-    left: 267px;
+  .about-ornament {
     width: 545px;
     height: 484px;
+    bottom: -75px;
+    right: 0;
   }
   .about-text {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.04em;
     color: rgba(252, 249, 249, 0.4);
-  }
-  .about-text-store {
-    width: 481px;
   }
 }
