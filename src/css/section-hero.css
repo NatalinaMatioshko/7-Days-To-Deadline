@@ -3,9 +3,7 @@
     padding-bottom: 80px;
 }
 
-.container {
 
-}
 
 .hero-title {
     font-weight: 400;
@@ -24,7 +22,10 @@ margin-bottom: 20px;
     display: none;
 }
 .hero-icon-star {
+    align-items: center;
+    justify-content: center;
     fill: #ecd979;
+    margin-bottom: 16px;
 }
 .hero-star-comment {
     font-weight: 400;
@@ -66,28 +67,58 @@ margin-bottom: 40px;
 
 .hero-image {
     border-radius: 4px;
+    width: 335px;
+height: 545px;
 }
 
 @media screen and (min-width:768px){
-.container{
-    padding-left: 32px;
-    padding-right: 32px;
+    .hero{
+        display: inline-block;
+
+}
+
+.hero-top-container{
+display: inline;
 }
 
 .hero-title {
-min-width: 549px;
+font-size: 54px;
+line-height: 1.19;
+width: 549px;
 margin-bottom: 40px;
 }
 
 .hero-star-container{
-    display:inline;
-    margin-right: 0  auto;
+    flex-direction: row;
+    display: contents;
+    position: absolute;
+}
+
+
+.hero-star-comment {
+    width: 115px;
 }
 
 .hero-btn {
+    font-size: 16px;
+    width: 168px;
+    height: 50px;
     margin-left: 173px;
     margin-bottom: 46px;
 }
 
+.hero-image {
+    width: 413px;
+    height: 575px;
+}
+}
 
+@media screen and (min-width:1280px){
+
+
+    .hero-image{
+        width: 392px;
+        height: 545px;
+
+    } 
 }
