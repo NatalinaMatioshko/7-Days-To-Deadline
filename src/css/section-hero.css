@@ -1,4 +1,6 @@
 .hero {
+    min-width: 320px;
+    max-width: 375px;
     padding-top: 84px;
     padding-bottom: 80px;
 }
@@ -20,6 +22,7 @@ margin-bottom: 20px;
 
 .hero-star-container {
     display: none;
+    
 }
 .hero-icon-star {
     align-items: center;
