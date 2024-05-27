@@ -1,4 +1,6 @@
 .about-section {
+  max-width: 375px;
+  min-width: 320px;
   justify-content: center;
 }
 
@@ -56,8 +58,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-section-content {
-    width: 704px;
+  .about-section {
+    max-width: 768px;
   }
   .about-nema {
     font-weight: 500;
