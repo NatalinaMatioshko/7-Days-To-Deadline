@@ -124,6 +124,10 @@
     max-width: 594px;
     border-radius: 4px;
   }
+  .about-picture-img {
+    max-width: 594px;
+    border-radius: 4px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .about-section {
