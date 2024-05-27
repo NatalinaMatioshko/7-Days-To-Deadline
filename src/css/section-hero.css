@@ -20,15 +20,13 @@ margin-bottom: 20px;
     color: #ecd979;
 }
 
-.hero-star-container {
-    display: none;
-    
-}
+
 .hero-icon-star {
     align-items: center;
     justify-content: center;
     fill: #ecd979;
     margin-bottom: 16px;
+    display: none;
 }
 .hero-star-comment {
     font-weight: 400;
@@ -36,6 +34,7 @@ font-size: 16px;
 letter-spacing: -0.04em;
 text-align: center;
 color: rgba(252, 249, 249, 0.4);
+display: none;
 }
 
 .hero-btn {
@@ -97,8 +96,13 @@ margin-bottom: 40px;
     position: absolute;
 }
 
+.hero-icon-star {
+    display: block;
+}
+
 
 .hero-star-comment {
+    display: block;
     width: 115px;
 }
 
