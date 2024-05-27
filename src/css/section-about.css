@@ -140,21 +140,30 @@
   .about-nema-menu {
     width: 481px;
     height: 389px;
-    margin-right: 50px;
+    justify-content: flex-end;
   }
   .about-picture {
     width: 100%;
     height: 100%;
   }
+  .about-picture-img {
+    max-width: 709px;
+    border-radius: 4px;
+  }
 
   .about-picture::before {
-    bottom: -75px;
-    left: 261px;
+    bottom: -84px;
+    left: 267px;
+    width: 545px;
+    height: 484px;
   }
   .about-text {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.04em;
     color: rgba(252, 249, 249, 0.4);
+  }
+  .about-text-store {
+    width: 481px;
   }
 }
