@@ -116,3 +116,9 @@
     left: 147px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .about-picture {
+    width: 709px;
+    height: 545px;
+  }
+}
