@@ -60,6 +60,7 @@
   }
   @media screen and (min-width: 768px) {
     .hero {
+      margin: 0 auto;
       position: relative;
       padding-top: 113px;
       max-width: 768px;
