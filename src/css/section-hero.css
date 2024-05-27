@@ -22,8 +22,6 @@ margin-bottom: 20px;
 
 
 .hero-icon-star {
-    align-items: center;
-    justify-content: center;
     fill: #ecd979;
     margin-bottom: 16px;
     display: none;
@@ -74,12 +72,12 @@ margin-bottom: 40px;
 
 @media screen and (min-width:768px){
     .hero{
-        display: inline-block;
+        /* display: inline-block; */
 
 }
 
 .hero-top-container{
-display: inline;
+flex-wrap: nowrap;
 }
 
 .hero-title {
@@ -90,9 +88,7 @@ margin-bottom: 40px;
 }
 
 .hero-star-container{
-    flex-direction: row;
-    display: contents;
-    position: absolute;
+width: 115px;
 }
 
 .hero-icon-star {
@@ -117,10 +113,17 @@ margin-bottom: 40px;
 }
 
 @media screen and (min-width:1280px){
-    
+    .hero-title {
+        width: 518px;
+        }
 }
 
 
 @media screen and (min-width:1440px){
+    .hero-title {
+        width: 632px;
+        font-size: 64px;
+        line-height: 1.16;
 
+        }
 }
