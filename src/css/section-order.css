@@ -76,7 +76,7 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   padding: 14px 16px;
-  width: 335px;
+  width: 100%;
   height: 47px;
   overflow-y: hidden;
   background-color: inherit;
@@ -108,7 +108,7 @@ textarea::placeholder {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   padding: 14px 16px;
-  width: 335px;
+  width: 100%;
   height: 47px;
   overflow-y: hidden;
   background-color: inherit;
@@ -119,7 +119,7 @@ textarea::placeholder {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 8px;
   padding: 14px 16px;
-  width: 335px;
+  width: 100%;
   height: 196px;
   overflow-y: hidden;
   background-color: inherit;
