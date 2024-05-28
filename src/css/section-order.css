@@ -27,7 +27,7 @@
 .green-picture-container {
   max-width: 375px;
   margin-left: auto;
-  margin-right: auto;;
+  margin-right: auto;
   height: 500px;
   background-image: url(/img/your-order/mobile-green.jpg);
   background-repeat: no-repeat;
@@ -224,7 +224,7 @@ textarea::placeholder {
     font-size: 44px;
     line-height: 132%;
     width: 542px;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .email-input {
@@ -263,7 +263,7 @@ textarea::placeholder {
   }
 
   .your-order-section-title {
-    padding-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .section-your-order-wrapper {
@@ -312,7 +312,7 @@ textarea::placeholder {
     left: -100px;
     bottom: -120px;
     margin-left: auto;
-    margin-right: auto;;
+    margin-right: auto;
   }
   .your-order-section-title {
     width: 666px;
