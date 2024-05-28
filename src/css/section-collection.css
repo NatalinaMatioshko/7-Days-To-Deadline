@@ -35,6 +35,7 @@
     border-radius: 4px;
 }
 .section-collection{
+    margin: auto;
     max-width: 375px;
     position: relative;
     background-image: url(/img/ornament/ornament-yellow.png);
