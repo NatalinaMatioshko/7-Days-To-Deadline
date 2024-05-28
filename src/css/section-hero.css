@@ -20,7 +20,18 @@
   fill: #ecd979;
   margin-bottom: 16px;
   display: none;
+
+  animation: rotation 7s linear infinite;
 }
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .hero-star-comment {
   font-weight: 400;
   font-size: 16px;
@@ -58,6 +69,11 @@
   fill: #ecd979;
   align-items: center;
   justify-content: center;
+  transition: transform 700ms linear;
+}
+.hero-btn-icon:focus,
+.hero-btn-icon:hover {
+  transform: rotate(107deg);
 }
 .hero-image {
   border-radius: 4px;

@@ -148,6 +148,12 @@ textarea::placeholder {
 .arrow-in-button-icon {
   fill: yellow;
   padding-left: 10px;
+
+  transition: transform 500ms linear;
+}
+.arrow-in-button-icon:hover,
+.arrow-in-button-icon:focus {
+  transform: rotate(-57deg);
 }
 
 .full-name-input:hover {
