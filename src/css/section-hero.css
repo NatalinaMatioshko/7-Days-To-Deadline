@@ -99,8 +99,8 @@
     font-size: 16px;
     width: 168px;
     height: 50px;
-    margin-left: 173px;
-    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -122,8 +122,8 @@
     padding-top: 94px;
     text-align: left;
   }
-  .hero-image {
-    padding-right: 60px;
+  .hero-picture {
+    margin-right: 60px;
   }
   .hero-star-container {
     position: absolute;
